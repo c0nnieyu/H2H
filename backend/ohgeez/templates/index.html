@@ -1,10 +1,18 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Howdy!</title>
-    </head>
-    <body>
-        <h1>Howdy! I am Learning Django!</h1>
-        <a href="/test">test link</a>
-    </body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+    <div class="list-group col-log">
+      {% for category in categories %}
+      <a href="#" class="list-group-item list-group-item-action">
+        {{ category.name }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+
+{% endblock content %}
