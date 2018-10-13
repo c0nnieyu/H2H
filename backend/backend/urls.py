@@ -20,6 +20,7 @@ from django.conf.urls import url
 from ohgeez import views
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    #url(r'^$', views.index, name='index'),
+    url(r'^$', views.HomePageView.as_view()),
     path('admin/', admin.site.urls),
 ]
