@@ -23,8 +23,8 @@ class Geez(models.Model):
     zip_code = models.CharField(_("Zip Code"), max_length=5)
 
     #Location Fields
-    longitude = models.FloatField(editable=False)
-    latitude = models.FloatField(editable=False)
+    #~ longitude = models.FloatField(editable=False)
+    #~ latitude = models.FloatField(editable=False)
 
     #Phone fields
     phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$', message="Phone number must be entered in the format: '+999999999'.")
@@ -37,8 +37,8 @@ class Geez(models.Model):
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
 
     # bookkeeping
-    created = models.DateField(editable=False)
-    updated = models.DateTimeField(editable=False)
+    #~ created = models.DateField(editable=False)
+    #~ updated = models.DateTimeField(editable=False)
 
     def addGps(self):
         geolocator = Nominatim(user_agent="ohgeez")
@@ -46,12 +46,12 @@ class Geez(models.Model):
         self.longitude = location.longitude
         self.latitude = location.latitude
 
-    def save(self):
-        if not self.id:
-            self.created = datetime.date.today()
-            addGps(self)
-        self.updated = datetime.datetime.today()
-        super(Geez, self).save()
+    #~ def save(self):
+        #~ if not self.id:
+            #~ self.created = datetime.date.today()
+            #~ addGps(self)
+        #~ self.updated = datetime.datetime.today()
+        #~ super(Geez, self).save()
 
     def __str__(self):
         return "%s" % (self.name)
