@@ -21,6 +21,7 @@ from ohgeez import views
 
 urlpatterns = [
     url(r'^$', views.HomePageView.as_view()),
+    url(r'^test/', views.TestPageView.as_view()),
     url(r'^comments/', include('django_comments.urls')),
     path('admin/', admin.site.urls),
 ]

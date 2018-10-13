@@ -10,4 +10,5 @@ class HomePageView(TemplateView):
     return render(request, 'index.html', context=None)
 
 class TestPageView(TemplateView):
-  template_name = "test.html"
+  def get(self, request, **kwargs):
+    return render(request, 'hello.html', context=None)
