@@ -1,0 +1,58 @@
+.body{
+background-color: #bdb796 !important;
+}
+
+.breadcrumb {
+    background-color: #46c3b6 !important;
+}
+
+.breadcrumb-item.active {
+     color: #262628;
+     font-weight: bold;
+
+}
+
+.edit {
+  background-color: gray;
+  font-weight: bold;
+  margin-left: 50vw;
+}
+
+.tag {
+  background-color: gray;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-left:2px;
+  margin-right:2px;
+  margin-bottom: 15px;
+  color: white;
+  padding: 2px;
+}
+
+.hours-list {
+  margin-bottom: 15px;
+}
+
+.day {
+  font-weight: bold;
+}
+
+.services-list {
+  margin-bottom: 15px;
+}
+
+.profile-pic img {
+  width: 50px;
+}
+
+.clickme {
+  background-color: gray;
+  border-radius: 3px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.username {
+  color: white;
+  font-weight: bold;
+}
