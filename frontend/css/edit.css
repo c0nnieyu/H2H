@@ -1,0 +1,39 @@
+.body{
+background-color: #bdb796 !important;
+}
+
+.breadcrumb {
+    background-color: #46c3b6 !important;
+}
+
+.breadcrumb-item.active {
+     color: #262628;
+     font-weight: bold;
+
+}
+
+.history {
+  background-color: gray;
+  font-weight: bold;
+  margin-left: 5vw;
+  margin-bottom: 15px;
+  display:inline;
+}
+
+.publish {
+  background-color: gray;
+  font-weight: bold;
+  margin-left: 3vw;
+  margin-bottom: 15px;
+  display: inline;
+
+}
+
+.hours-list {
+  margin-top: 35px;
+  margin-bottom: 36px;
+}
+
+.services {
+  margin-bottom: 60px;
+}
